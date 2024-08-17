@@ -1,0 +1,6 @@
+framework module Pods_TaskDefinition {
+  umbrella header "Pods-TaskDefinition-umbrella.h"
+
+  export *
+  module * { export * }
+}
