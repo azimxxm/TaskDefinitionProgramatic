@@ -22,6 +22,13 @@
 		CA65CD6B2C7138C800E61D20 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD6A2C7138C800E61D20 /* UsersVC.swift */; };
 		CA65CD6D2C71397D00E61D20 /* PostsDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD6C2C71397D00E61D20 /* PostsDM.swift */; };
 		CA65CD6F2C713A0800E61D20 /* PostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD6E2C713A0800E61D20 /* PostsVC.swift */; };
+		CA65CD712C713BE100E61D20 /* PostsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD702C713BE100E61D20 /* PostsVM.swift */; };
+		CA65CD732C713C8400E61D20 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD722C713C8400E61D20 /* Box.swift */; };
+		CA65CD782C71402000E61D20 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD772C71402000E61D20 /* Navigator.swift */; };
+		CA65CD7A2C71403E00E61D20 /* PostDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD792C71403E00E61D20 /* PostDetailVC.swift */; };
+		CA65CD7C2C71434700E61D20 /* PostDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD7B2C71434700E61D20 /* PostDetailVM.swift */; };
+		CA65CD7E2C71454F00E61D20 /* TodosVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD7D2C71454F00E61D20 /* TodosVM.swift */; };
+		CA65CD802C7145DB00E61D20 /* TodosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD7F2C7145DB00E61D20 /* TodosCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		CA65CD6A2C7138C800E61D20 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		CA65CD6C2C71397D00E61D20 /* PostsDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDM.swift; sourceTree = "<group>"; };
 		CA65CD6E2C713A0800E61D20 /* PostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVC.swift; sourceTree = "<group>"; };
+		CA65CD702C713BE100E61D20 /* PostsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVM.swift; sourceTree = "<group>"; };
+		CA65CD722C713C8400E61D20 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		CA65CD772C71402000E61D20 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		CA65CD792C71403E00E61D20 /* PostDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVC.swift; sourceTree = "<group>"; };
+		CA65CD7B2C71434700E61D20 /* PostDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVM.swift; sourceTree = "<group>"; };
+		CA65CD7D2C71454F00E61D20 /* TodosVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosVM.swift; sourceTree = "<group>"; };
+		CA65CD7F2C7145DB00E61D20 /* TodosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosCell.swift; sourceTree = "<group>"; };
 		F289AAAD1D52E510EE2D1FFD /* Pods_TaskDefinition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskDefinition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90D6444C0C5F84647A1BA6C /* Pods-TaskDefinition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskDefinition.release.xcconfig"; path = "Target Support Files/Pods-TaskDefinition/Pods-TaskDefinition.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +114,8 @@
 				CA65CD592C712E3400E61D20 /* Model */,
 				CA65CD5A2C712E3800E61D20 /* ViewModel */,
 				CA65CD5B2C712FC300E61D20 /* APIManager */,
+				CA65CD742C713C9300E61D20 /* Helpers */,
+				CA65CD842C71492600E61D20 /* Extenstion */,
 				CA65CD572C712DF700E61D20 /* Resources */,
 				CA65CD562C712DF100E61D20 /* Root */,
 			);
@@ -147,6 +163,9 @@
 		CA65CD5A2C712E3800E61D20 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CA65CD702C713BE100E61D20 /* PostsVM.swift */,
+				CA65CD7B2C71434700E61D20 /* PostDetailVM.swift */,
+				CA65CD7D2C71454F00E61D20 /* TodosVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -164,6 +183,7 @@
 		CA65CD662C7137C200E61D20 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CA65CD7F2C7145DB00E61D20 /* TodosCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -172,11 +192,28 @@
 			isa = PBXGroup;
 			children = (
 				CA65CD6E2C713A0800E61D20 /* PostsVC.swift */,
+				CA65CD792C71403E00E61D20 /* PostDetailVC.swift */,
 				CA65CD462C712D7500E61D20 /* TodosVC.swift */,
 				CA65CD6A2C7138C800E61D20 /* UsersVC.swift */,
 				CA65CD682C7137F800E61D20 /* MainTabbarVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CA65CD742C713C9300E61D20 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CA65CD722C713C8400E61D20 /* Box.swift */,
+				CA65CD772C71402000E61D20 /* Navigator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CA65CD842C71492600E61D20 /* Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extenstion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,17 +331,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA65CD652C7131C200E61D20 /* TodosDM.swift in Sources */,
+				CA65CD732C713C8400E61D20 /* Box.swift in Sources */,
 				CA65CD6B2C7138C800E61D20 /* UsersVC.swift in Sources */,
+				CA65CD7C2C71434700E61D20 /* PostDetailVM.swift in Sources */,
 				CA65CD6F2C713A0800E61D20 /* PostsVC.swift in Sources */,
 				CA65CD6D2C71397D00E61D20 /* PostsDM.swift in Sources */,
+				CA65CD782C71402000E61D20 /* Navigator.swift in Sources */,
 				CA65CD612C71311D00E61D20 /* APIManager.swift in Sources */,
 				CA65CD632C71317000E61D20 /* UsersDM.swift in Sources */,
 				CA65CD692C7137F800E61D20 /* MainTabbarVC.swift in Sources */,
 				CA65CD472C712D7500E61D20 /* TodosVC.swift in Sources */,
 				CA65CD432C712D7500E61D20 /* AppDelegate.swift in Sources */,
 				CA65CD452C712D7500E61D20 /* SceneDelegate.swift in Sources */,
+				CA65CD7E2C71454F00E61D20 /* TodosVM.swift in Sources */,
 				CA65CD5F2C7130AA00E61D20 /* RegisterAPI.swift in Sources */,
+				CA65CD7A2C71403E00E61D20 /* PostDetailVC.swift in Sources */,
+				CA65CD712C713BE100E61D20 /* PostsVM.swift in Sources */,
 				CA65CD5D2C712FD400E61D20 /* Net.swift in Sources */,
+				CA65CD802C7145DB00E61D20 /* TodosCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

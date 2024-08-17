@@ -10,7 +10,7 @@ import Foundation
 
 final class APIManager {
     static func getPosts(completion: @escaping ([PostsDM]) -> Void) {
-        Net.req(url: RegisterAPI.getUrls(endPoint: .todos), method: .get, param: nil, header: nil, encode: JSONEncoding.default) { json in
+        Net.req(url: RegisterAPI.getUrls(endPoint: .posts), method: .get, param: nil, header: nil, encode: JSONEncoding.default) { json in
             guard let json = json else { return completion([]) }
             let data = json.arrayValue.map { PostsDM(json: $0) }
             completion(data)
@@ -18,7 +18,7 @@ final class APIManager {
     }
     
     
-    static func getFoods(completion: @escaping ([TodosDM]) -> Void) {
+    static func getTodos(completion: @escaping ([TodosDM]) -> Void) {
         Net.req(url: RegisterAPI.getUrls(endPoint: .todos), method: .get, param: nil, header: nil, encode: JSONEncoding.default) { json in
             guard let json = json else { return completion([]) }
             let data = json.arrayValue.map { TodosDM(json: $0) }
