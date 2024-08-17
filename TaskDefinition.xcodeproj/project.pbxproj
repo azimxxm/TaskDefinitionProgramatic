@@ -28,7 +28,9 @@
 		CA65CD7A2C71403E00E61D20 /* PostDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD792C71403E00E61D20 /* PostDetailVC.swift */; };
 		CA65CD7C2C71434700E61D20 /* PostDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD7B2C71434700E61D20 /* PostDetailVM.swift */; };
 		CA65CD7E2C71454F00E61D20 /* TodosVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD7D2C71454F00E61D20 /* TodosVM.swift */; };
-		CA65CD802C7145DB00E61D20 /* TodosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD7F2C7145DB00E61D20 /* TodosCell.swift */; };
+		CA65CD802C7145DB00E61D20 /* TodosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD7F2C7145DB00E61D20 /* TodosTVC.swift */; };
+		CA65CD882C71502B00E61D20 /* UsersVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD872C71502B00E61D20 /* UsersVM.swift */; };
+		CA65CD8A2C71508D00E61D20 /* UsersTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65CD892C71508D00E61D20 /* UsersTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +57,9 @@
 		CA65CD792C71403E00E61D20 /* PostDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVC.swift; sourceTree = "<group>"; };
 		CA65CD7B2C71434700E61D20 /* PostDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVM.swift; sourceTree = "<group>"; };
 		CA65CD7D2C71454F00E61D20 /* TodosVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosVM.swift; sourceTree = "<group>"; };
-		CA65CD7F2C7145DB00E61D20 /* TodosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosCell.swift; sourceTree = "<group>"; };
+		CA65CD7F2C7145DB00E61D20 /* TodosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosTVC.swift; sourceTree = "<group>"; };
+		CA65CD872C71502B00E61D20 /* UsersVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVM.swift; sourceTree = "<group>"; };
+		CA65CD892C71508D00E61D20 /* UsersTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTVC.swift; sourceTree = "<group>"; };
 		F289AAAD1D52E510EE2D1FFD /* Pods_TaskDefinition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskDefinition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90D6444C0C5F84647A1BA6C /* Pods-TaskDefinition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskDefinition.release.xcconfig"; path = "Target Support Files/Pods-TaskDefinition/Pods-TaskDefinition.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +170,7 @@
 				CA65CD702C713BE100E61D20 /* PostsVM.swift */,
 				CA65CD7B2C71434700E61D20 /* PostDetailVM.swift */,
 				CA65CD7D2C71454F00E61D20 /* TodosVM.swift */,
+				CA65CD872C71502B00E61D20 /* UsersVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,7 +188,8 @@
 		CA65CD662C7137C200E61D20 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CA65CD7F2C7145DB00E61D20 /* TodosCell.swift */,
+				CA65CD7F2C7145DB00E61D20 /* TodosTVC.swift */,
+				CA65CD892C71508D00E61D20 /* UsersTVC.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -335,6 +341,7 @@
 				CA65CD6B2C7138C800E61D20 /* UsersVC.swift in Sources */,
 				CA65CD7C2C71434700E61D20 /* PostDetailVM.swift in Sources */,
 				CA65CD6F2C713A0800E61D20 /* PostsVC.swift in Sources */,
+				CA65CD882C71502B00E61D20 /* UsersVM.swift in Sources */,
 				CA65CD6D2C71397D00E61D20 /* PostsDM.swift in Sources */,
 				CA65CD782C71402000E61D20 /* Navigator.swift in Sources */,
 				CA65CD612C71311D00E61D20 /* APIManager.swift in Sources */,
@@ -348,7 +355,8 @@
 				CA65CD7A2C71403E00E61D20 /* PostDetailVC.swift in Sources */,
 				CA65CD712C713BE100E61D20 /* PostsVM.swift in Sources */,
 				CA65CD5D2C712FD400E61D20 /* Net.swift in Sources */,
-				CA65CD802C7145DB00E61D20 /* TodosCell.swift in Sources */,
+				CA65CD8A2C71508D00E61D20 /* UsersTVC.swift in Sources */,
+				CA65CD802C7145DB00E61D20 /* TodosTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@ class TodosVC: UIViewController {
     
     lazy var tableView: UITableView = {
         let tableview = UITableView()
+        tableview.rowHeight = 80
         return tableview
     }()
     
@@ -36,7 +37,7 @@ class TodosVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        tableView.register(TodosCell.self, forCellReuseIdentifier: TodosCell.identifier)
+        tableView.register(TodosTVC.self, forCellReuseIdentifier: TodosTVC.identifier)
     }
     
     private func dataBinding() {
@@ -56,7 +57,7 @@ extension TodosVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TodosCell.identifier, for: indexPath) as? TodosCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TodosTVC.identifier, for: indexPath) as? TodosTVC else {return UITableViewCell()}
         cell.setData(item: viewModel.data.value[indexPath.row])
         cell.selectionStyle = .none
         return cell
